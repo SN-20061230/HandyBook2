@@ -59,4 +59,29 @@
         android:name="com.example.handybook2.fragments.FilterFragment"
         android:label="fragment_filter"
         tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/barchasiFragment"
+        android:name="com.example.handybook2.fragments.BarchasiFragment"
+        android:label="fragment_barchasi"
+        tools:layout="@layout/fragment_barchasi" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.example.handybook2.fragments.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.example.handybook2.fragments.SavedFragment"
+        android:label="fragment_saved"
+        tools:layout="@layout/fragment_saved" />
+    <fragment
+        android:id="@+id/wishlistFragment"
+        android:name="com.example.handybook2.fragments.WishlistFragment"
+        android:label="fragment_wishlist"
+        tools:layout="@layout/fragment_wishlist" />
+    <fragment
+        android:id="@+id/maqolalarFragment"
+        android:name="com.example.handybook2.fragments.MaqolalarFragment"
+        android:label="fragment_maqolalar"
+        tools:layout="@layout/fragment_maqolalar" />
 </navigation>

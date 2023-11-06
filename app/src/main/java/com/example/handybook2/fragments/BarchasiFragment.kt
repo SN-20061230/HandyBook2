@@ -8,21 +8,24 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.handybook2.R
-import com.example.handybook2.adapters.ReviewAdapter
+import com.example.handybook2.adapters.BookAdapter
 import com.example.handybook2.books.BookApi
-import com.example.handybook2.databinding.FragmentSavedBinding
-import com.example.handybook2.databinding.FragmentWishlistBinding
+import com.example.handybook2.databinding.FragmentAccountBinding
+import com.example.handybook2.databinding.FragmentBarchasiBinding
 import com.example.handybook2.model.Book
+import com.example.handybook2.model.Genre
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
-class WishlistFragment : Fragment() {  lateinit var binding: FragmentWishlistBinding
+
+class BarchasiFragment : Fragment() {
+    lateinit var binding: FragmentBarchasiBinding
     lateinit var books: ArrayList<Book>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentWishlistBinding.inflate(inflater, container, false)
+        binding = FragmentBarchasiBinding.inflate(inflater, container, false)
 
         val shared = requireContext().getSharedPreferences("shared", Context.MODE_PRIVATE)
         val gson = Gson()
@@ -43,10 +46,6 @@ class WishlistFragment : Fragment() {  lateinit var binding: FragmentWishlistBin
 
 
 
-//        binding.filter.setOnClickListener{
-//            findNavController().navigate(R.id.filterFragment)
-//        }
-
 
 
 
@@ -56,11 +55,10 @@ class WishlistFragment : Fragment() {  lateinit var binding: FragmentWishlistBin
 
 
 
-
     private fun setMainDefaultRvUI() {
-        binding.wishlistRecycler.adapter =
-            ReviewAdapter(books, R.layout.book_item2, requireContext())
-        binding.wishlistRecycler.layoutManager =
+        binding.barchasiRV.adapter =
+            BookAdapter(books, R.layout.book_item2, requireContext())
+        binding.barchasiRV.layoutManager =
             LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
     }
 
@@ -68,3 +66,4 @@ class WishlistFragment : Fragment() {  lateinit var binding: FragmentWishlistBin
 
 
 }
+

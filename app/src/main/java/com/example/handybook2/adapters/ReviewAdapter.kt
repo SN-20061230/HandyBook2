@@ -5,23 +5,26 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.AnimationUtils
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.handybook2.R
 import com.example.handybook2.model.Book
+import com.example.handybook2.model.Review
 import com.google.android.material.imageview.ShapeableImageView
 
-class BookAdapter(
+class ReviewAdapter(
     var books: ArrayList<Book>,
-    var itemLayout: Int = R.layout.book_item,
+    var itemLayout: Int = R.layout.book_item2,
     var context: Context,
 
-    ) : RecyclerView.Adapter<BookAdapter.MyHolder>() {
+    ) : RecyclerView.Adapter<ReviewAdapter.MyHolder>() {
     class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        var name = itemView.findViewById<TextView>(R.id.bookName)
-        var img = itemView.findViewById<ShapeableImageView>(R.id.imagelar)
-        var price = itemView.findViewById<TextView>(R.id.bookPrice)
-        var rating = itemView.findViewById<TextView>(R.id.bookRating)
+        var image = itemView.findViewById<ImageView>(R.id.imagelar)
+        var comment = itemView.findViewById<TextView>(R.id.bookName)
+        var oclock = itemView.findViewById<TextView>(R.id.bookPrice)
+        var time = itemView.findViewById<TextView>(R.id.bookRating)
+
     }
 
 
@@ -35,10 +38,11 @@ class BookAdapter(
 
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
         var book = books[position]
-        holder.name.text = book.name
-        holder.img.setImageResource(book.img)
-        holder.price.text = book.price
-        holder.rating.text = book.rating.toString()
+
+        holder.image.setImageResource(book.img)
+        holder.comment.text = book.description
+        holder.oclock.text = book.price
+        holder.time.text = book.genreName
 
         val anim = AnimationUtils.loadAnimation(context, R.anim.item_anim)
         holder.itemView.startAnimation(anim)

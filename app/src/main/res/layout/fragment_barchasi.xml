@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".fragments.SavedFragment">
+    tools:context=".fragments.BarchasiFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/pop_600"
-            android:text="Saved Books"
+            android:text="Barchasi"
             android:textColor="@color/black"
             android:textSize="20sp" />
     </LinearLayout>

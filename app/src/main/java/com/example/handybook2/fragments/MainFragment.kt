@@ -40,6 +40,11 @@ class MainFragment : Fragment() {
                     loadFragment(WishlistFragment())
                     true
                 }
+
+                R.id.feather ->{
+                    loadFragment(MaqolalarFragment())
+                    true
+                }
                 R.id.purchased -> {
                     loadFragment(SavedFragment())
                     true

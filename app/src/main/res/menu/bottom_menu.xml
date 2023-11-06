@@ -11,7 +11,11 @@
         android:iconTint="@color/mainColor"
         android:icon="@drawable/saved_selected"
         android:title="Saved" />
-
+    <item
+        android:id="@+id/feather"
+        android:iconTint="@color/mainColor"
+        android:icon="@drawable/feather"
+        android:title="Maqolalar" />
 
     <item
         android:id="@+id/wishlist"

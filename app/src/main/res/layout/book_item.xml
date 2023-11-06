@@ -22,7 +22,7 @@
         app:layout_constraintVertical_weight="1">
 
         <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/bookImg"
+            android:id="@+id/imagelar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"

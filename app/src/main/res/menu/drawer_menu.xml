@@ -28,11 +28,11 @@
             <group android:checkableBehavior="single">
             <item
                 android:id="@+id/nav_kanal"
-                android:icon="@drawable/settings"
+                android:icon="@drawable/telegram"
                 android:title="Telegram Kanalimiz" />
             <item
                 android:id="@+id/nav_dokon"
-                android:icon="@drawable/settings"
+                android:icon="@drawable/instagram"
                 android:title="Instagram do'konimiz" />
             </group>
         </menu>
@@ -42,11 +42,11 @@
             <group android:checkableBehavior="single">
                 <item
                     android:id="@+id/nav_ulash"
-                    android:icon="@drawable/settings"
+                    android:icon="@drawable/share"
                     android:title="Ulashish" />
                 <item
                     android:id="@+id/nav_rate"
-                    android:icon="@drawable/settings"
+                    android:icon="@drawable/star"
                     android:title="Bizga baho bering" />
             </group>
         </menu>
@@ -56,7 +56,7 @@
         <menu>
             <item
                 android:id="@+id/nav_logout"
-                android:icon="@drawable/saved"
+                android:icon="@drawable/logout2"
                 android:title="Hisobdan chiqish" />
         </menu>
     </item>

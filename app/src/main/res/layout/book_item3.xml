@@ -34,7 +34,7 @@
             android:fontFamily="@font/pop_600"
             android:maxLines="1"
             android:text="Doxology"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
@@ -43,20 +43,20 @@
             android:id="@+id/bookRating"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/pop_400"
             android:layout_marginTop="15dp"
+            android:fontFamily="@font/pop_400"
             android:text="4.6"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
         <TextView
             android:id="@+id/bookPrice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/pop_400"
             android:layout_marginTop="5dp"
+            android:fontFamily="@font/pop_400"
             android:text="$7.50"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="12sp" />
 
     </LinearLayout>
