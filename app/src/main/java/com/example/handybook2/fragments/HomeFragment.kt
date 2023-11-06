@@ -66,7 +66,7 @@ class HomeFragment : Fragment() {
         genres.add(Genre("Comedy", R.drawable.comedy))
         genres.add(Genre("Action", R.drawable.action12))
         genres.add(Genre("Adventure", R.drawable.adventure))
-        genres.add(Genre("Drama", R.drawable.drama2))
+        genres.add(Genre("Drama", R.drawable.drama))
         return genres
     }
 

@@ -9,7 +9,7 @@
     <item
         android:id="@+id/purchased"
         android:iconTint="@color/mainColor"
-        android:icon="@drawable/saved_selected"
+        android:icon="@drawable/saved"
         android:title="Saved" />
 
     <item

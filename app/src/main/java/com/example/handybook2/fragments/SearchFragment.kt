@@ -57,14 +57,6 @@ class SearchFragment : Fragment() {
         return binding.root
     }
 
-    private fun getGenres(): ArrayList<Genre> {
-        var genres = ArrayList<Genre>()
-        genres.add(Genre("Comedy", R.drawable.comedy))
-        genres.add(Genre("Action", R.drawable.action12))
-        genres.add(Genre("Adventure", R.drawable.adventure))
-        genres.add(Genre("Drama", R.drawable.drama2))
-        return genres
-    }
 
 
 
