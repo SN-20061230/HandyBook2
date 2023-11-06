@@ -25,90 +25,100 @@ class BookApi(context: Context) {
         books.add(
             Book(
                 "Harry Potter",
-                "Uolter Ayzekson",
-                850,
-                "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
-                4.7,
-                "9.6 mb",
+                "J.K. Rowling",
+                250,
+                "\n" + "Throughout the series, Harry is described as having his father's perpetually untidy black hair, his mother's bright green eyes, and a lightning bolt-shaped scar on his forehead. He is further described as \"small and skinny for his age\" with \"a thin face\" and \"knobbly knees\", and he wears Windsor glasses.",
+                4.9,
+                "9.8 mb",
                 "$17.99",
-                R.drawable.doxology,
-                "Thriller",
-                null
+                R.drawable.harry,
+                "Fantastic"
             )
         )
 
         books.add(
             Book(
-                "The Final Revival of Opal & Nev",
-                "Yapon zobiti",
+                "How to win friends and influence people",
+                "Dale Carnegie",
                 237,
                 "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
-                4.9,
+                4.3,
                 "7.9 mb",
                 "$28.50",
-                R.drawable.opal,
-                "Romance",
-                null
+                R.drawable.win_people,
+                "Literature"
             )
         )
 
         books.add(
             Book(
-                "An Equal Music",
-                "Vikram Seth",
-                235,
+                "Atomic Habits",
+                "James Clear",
+                200,
                 "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
-                4.9,
-                "6.9 mb",
-                "$8.50",
-                R.drawable.music,
-                "Thriller",
-                null
+                4.3,
+                "16.9 mb",
+                "$18.50",
+                R.drawable.atomic_habits,
+                "Motivation"
             )
         )
 
         books.add(
             Book(
-                "Harry Potter",
-                "Sidney Halston",
+                "Ikki eshik orasi",
+                "O'tkir Hoshimov",
                 235,
                 "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
                 4.1,
-                "5.6 mb",
-                "$10.50",
-                R.drawable.valentines,
-                "Romance",
-                null
+                "15.6 mb",
+                "$20.50",
+                R.drawable.ikkieshikorasi,
+                "Romance"
             )
         )
 
         books.add(
             Book(
-                "Ibtido",
-                "Den Braun ",
-                235,
+                "Stive Jobs",
+                "Steve Jobs ",
+                245,
                 "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
-                4.2,
-                "6.9 mb",
-                "$8.50",
-                R.drawable.action1,
-                "Action",
-                null
+                4.5,
+                "16.9 mb",
+                "$18.50",
+                R.drawable.steve,
+                "Action"
             )
         )
 
         books.add(
             Book(
-                "Javdarzordagi xaloskor",
-                "Jerom Selinjer",
-                235,
+                "Odam bo'lish qiyin",
+                "O'lmas Umarbekov",
+                245,
                 "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
-                4.3,
-                "5.6 mb",
-                "$11.50",
-                R.drawable.img_3,
-                "Romance",
-                null
+                4.6,
+                "15.6 mb",
+                "$21.50",
+                R.drawable.odam,
+                "Motivation"
+            )
+        )
+
+
+
+        books.add(
+            Book(
+                "Sariq devni minib",
+                "Xudoyberdi To'xtaboyev",
+                245,
+                "\n" + "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi feugiat ac felis eget condimentum. Nunc fermentum velit et risus accumsan, at elementum metus luctus. Aliquam a nunc non leo placerat cursus. Sed et turpis sit amet libero volutpat luctus.",
+                4.9,
+                "25.6 mb",
+                "$22.50",
+                R.drawable.sariq,
+                "Thiller"
             )
         )
 

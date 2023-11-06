@@ -1,16 +1,12 @@
 package com.example.handybook2.fragments
 
 import android.content.Context
-import android.graphics.PorterDuff
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.view.inputmethod.EditorInfo
-import android.widget.Toast
-import androidx.core.content.ContextCompat
-import androidx.core.os.bundleOf
+import android.view.animation.AnimationUtils
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.handybook2.R
@@ -40,6 +36,9 @@ class HomeFragment : Fragment() {
             BookApi(requireContext()).saveAllBooksToShared()
         }
 
+
+
+
         var booksJson = shared.getString("books", null)
         books = gson.fromJson(booksJson, object : TypeToken<ArrayList<Book>>() {}.type)
 
@@ -52,9 +51,11 @@ class HomeFragment : Fragment() {
         changeWishBooksVisibility()
 
 
-        binding.filter.setOnClickListener({
+        binding.filter.setOnClickListener{
             findNavController().navigate(R.id.filterFragment)
-        })
+        }
+
+
 
 
         return binding.root
@@ -62,9 +63,10 @@ class HomeFragment : Fragment() {
 
     private fun getGenres(): ArrayList<Genre> {
         var genres = ArrayList<Genre>()
-        genres.add(Genre("Romance", R.drawable.img_2))
-        genres.add(Genre("Thriller", R.drawable.thriller))
-        genres.add(Genre("Action", R.drawable.action))
+        genres.add(Genre("Comedy", R.drawable.comedy))
+        genres.add(Genre("Action", R.drawable.action12))
+        genres.add(Genre("Adventure", R.drawable.adventure))
+        genres.add(Genre("Drama", R.drawable.drama2))
         return genres
     }
 
