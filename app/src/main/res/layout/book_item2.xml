@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="fitXY"
-            android:src="@drawable/doxology" />
+            android:src="@drawable/harry" />
     </androidx.cardview.widget.CardView>
 
     <LinearLayout
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/pop_600"
             android:maxLines="1"
-            android:text="Doxology"
+            android:text="Harry Potter"
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintEnd_toEndOf="parent"

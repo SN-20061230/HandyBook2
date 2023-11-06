@@ -84,4 +84,9 @@
         android:name="com.example.handybook2.fragments.MaqolalarFragment"
         android:label="fragment_maqolalar"
         tools:layout="@layout/fragment_maqolalar" />
+    <fragment
+        android:id="@+id/searchFragment2"
+        android:name="com.example.handybook2.fragments.SearchFragment"
+        android:label="fragment_search"
+        tools:layout="@layout/fragment_search" />
 </navigation>

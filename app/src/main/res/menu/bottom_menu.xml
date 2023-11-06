@@ -11,17 +11,20 @@
         android:iconTint="@color/mainColor"
         android:icon="@drawable/saved_selected"
         android:title="Saved" />
+
+    <item
+        android:id="@+id/search"
+        android:iconTint="@color/mainColor"
+        android:icon="@drawable/search"
+        android:title="Qidiruv" />
+
     <item
         android:id="@+id/feather"
         android:iconTint="@color/mainColor"
         android:icon="@drawable/feather"
         android:title="Maqolalar" />
 
-    <item
-        android:id="@+id/wishlist"
-        android:iconTint="@color/mainColor"
-        android:icon="@drawable/wishlist"
-        android:title="Wishlist" />
+
     <item
         android:id="@+id/account"
         android:iconTint="@color/mainColor"

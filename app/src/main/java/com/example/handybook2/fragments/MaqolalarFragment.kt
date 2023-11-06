@@ -9,17 +9,10 @@ import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.handybook2.R
-import com.example.handybook2.adapters.BookAdapter
-import com.example.handybook2.adapters.GenreAdapter
 import com.example.handybook2.adapters.ReviewAdapter
 import com.example.handybook2.books.BookApi
-import com.example.handybook2.books.ReviewApi
-import com.example.handybook2.databinding.FragmentBarchasiBinding
-import com.example.handybook2.databinding.FragmentHomeBinding
 import com.example.handybook2.databinding.FragmentMaqolalarBinding
 import com.example.handybook2.model.Book
-import com.example.handybook2.model.Genre
-import com.example.handybook2.model.Review
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
@@ -50,6 +43,10 @@ class MaqolalarFragment : Fragment() {
 
         setMainDefaultRvUI()
 
+
+        binding.accountImage.setOnClickListener{
+            findNavController().navigate(R.id.accountFragment)
+        }
 
 
 

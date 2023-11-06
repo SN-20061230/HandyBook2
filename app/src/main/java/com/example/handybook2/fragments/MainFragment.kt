@@ -45,6 +45,10 @@ class MainFragment : Fragment() {
                     loadFragment(MaqolalarFragment())
                     true
                 }
+                R.id.search ->{
+                    loadFragment(SearchFragment())
+                true
+                }
                 R.id.purchased -> {
                     loadFragment(SavedFragment())
                     true

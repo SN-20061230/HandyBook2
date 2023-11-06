@@ -7,26 +7,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.handybook2.R
-import com.example.handybook2.adapters.ReviewAdapter
+import com.example.handybook2.adapters.BookAdapter
+import com.example.handybook2.adapters.GenreAdapter
 import com.example.handybook2.books.BookApi
-import com.example.handybook2.databinding.FragmentMaqolalarBinding
-import com.example.handybook2.databinding.FragmentSavedBinding
+import com.example.handybook2.databinding.FragmentHomeBinding
+import com.example.handybook2.databinding.FragmentSearchBinding
 import com.example.handybook2.model.Book
+import com.example.handybook2.model.Genre
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 
 
-class SavedFragment : Fragment(){
-
-    lateinit var binding: FragmentSavedBinding
+class SearchFragment : Fragment() {
+    lateinit var binding: FragmentSearchBinding
     lateinit var books: ArrayList<Book>
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = FragmentSavedBinding.inflate(inflater, container, false)
+        binding = FragmentSearchBinding.inflate(inflater, container, false)
 
         val shared = requireContext().getSharedPreferences("shared", Context.MODE_PRIVATE)
         val gson = Gson()
@@ -36,9 +38,7 @@ class SavedFragment : Fragment(){
         }
 
 
-binding.accountImage.setOnClickListener{
-    findNavController().navigate(R.id.accountFragment)
-}
+
 
         var booksJson = shared.getString("books", null)
         books = gson.fromJson(booksJson, object : TypeToken<ArrayList<Book>>() {}.type)
@@ -47,11 +47,9 @@ binding.accountImage.setOnClickListener{
         setMainDefaultRvUI()
 
 
-
-
-//        binding.filter.setOnClickListener{
-//            findNavController().navigate(R.id.filterFragment)
-//        }
+        binding.accountImage.setOnClickListener{
+            findNavController().navigate(R.id.accountFragment)
+        }
 
 
 
@@ -59,16 +57,24 @@ binding.accountImage.setOnClickListener{
         return binding.root
     }
 
-
+    private fun getGenres(): ArrayList<Genre> {
+        var genres = ArrayList<Genre>()
+        genres.add(Genre("Comedy", R.drawable.comedy))
+        genres.add(Genre("Action", R.drawable.action12))
+        genres.add(Genre("Adventure", R.drawable.adventure))
+        genres.add(Genre("Drama", R.drawable.drama2))
+        return genres
+    }
 
 
 
     private fun setMainDefaultRvUI() {
-        binding.barchasiRV.adapter =
-            ReviewAdapter(books, R.layout.book_item2, requireContext())
-        binding.barchasiRV.layoutManager =
-            LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+        binding.qidiruvlar.adapter =
+            BookAdapter(books, R.layout.book_item, requireContext())
+        binding.qidiruvlar.layoutManager =
+            GridLayoutManager(context, 2)
     }
+
 
 
 

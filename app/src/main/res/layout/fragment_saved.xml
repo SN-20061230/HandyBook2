@@ -28,6 +28,12 @@
             android:text="Saved Books"
             android:textColor="@color/black"
             android:textSize="20sp" />
+        <ImageView
+            android:id="@+id/account_image"
+            android:layout_width="50dp"
+            android:layout_marginStart="-80dp"
+            android:layout_height="50dp"
+            android:src="@drawable/account" />
     </LinearLayout>
 
     <LinearLayout
